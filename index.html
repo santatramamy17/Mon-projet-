@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechZone Madagascar | PC Gaming, laptops et composants à Antananarivo</title>
+    <meta
+      name="description"
+      content="TechZone Madagascar est une boutique informatique premium à Antananarivo spécialisée dans les PC Gaming, laptops ASUS ROG, écrans, accessoires RGB et composants PC."
+    />
+    <meta
+      name="keywords"
+      content="TechZone Madagascar, PC Gamer Madagascar, laptop gaming Antananarivo, composants PC, accessoires gaming, montage PC"
+    />
+    <meta name="author" content="TechZone Madagascar" />
+    <meta property="og:title" content="TechZone Madagascar - Boutique Gaming Premium" />
+    <meta
+      property="og:description"
+      content="PC Gaming, laptops, accessoires RGB, composants et services informatiques à Antananarivo."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80"
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "system-ui", "Segoe UI", "sans-serif"],
+            },
+            colors: {
+              ink: "#060913",
+              neon: "#00d9ff",
+              pulse: "#8b5cf6",
+              acid: "#39ff88",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-ink text-white antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#060913]/80 backdrop-blur-xl">
+      <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8" aria-label="Navigation principale">
+        <a href="#accueil" class="flex items-center gap-3" aria-label="TechZone Madagascar accueil">
+          <span class="logo-mark">TZ</span>
+          <span class="leading-tight">
+            <span class="block text-lg font-black tracking-wide">TechZone</span>
+            <span class="block text-xs font-semibold uppercase text-neon">Madagascar</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle lg:hidden" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links hidden items-center gap-7 text-sm font-semibold text-white/78 lg:flex">
+          <a href="#accueil">Accueil</a>
+          <a href="#produits">Produits</a>
+          <a href="#services">Services</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#contact" class="hidden rounded-full bg-neon px-5 py-3 text-sm font-black text-ink shadow-[0_0_28px_rgba(0,217,255,.35)] transition hover:-translate-y-0.5 hover:bg-white lg:inline-flex">
+          Commander
+        </a>
+      </nav>
+
+      <div class="mobile-panel lg:hidden" id="mobileMenu">
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero-section">
+        <div class="hero-slider" aria-hidden="true">
+          <img
+            class="slide active"
+            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=82"
+            alt=""
+          />
+          <img
+            class="slide"
+            src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=1800&q=82"
+            alt=""
+          />
+          <img
+            class="slide"
+            src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?auto=format&fit=crop&w=1800&q=82"
+            alt=""
+          />
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="relative z-10 mx-auto grid min-h-screen max-w-7xl content-center px-5 pb-16 pt-28 lg:px-8">
+          <div class="max-w-3xl reveal">
+            <p class="mb-5 inline-flex rounded-full border border-neon/40 bg-neon/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-neon">
+              Boutique gaming premium à Antananarivo
+            </p>
+            <h1 class="text-5xl font-black leading-[0.95] md:text-7xl lg:text-8xl">
+              TechZone Madagascar
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78 md:text-xl">
+              PC Gaming puissants, laptops haut de gamme, composants fiables et accessoires RGB sélectionnés pour les joueurs, créateurs et pros exigeants.
+            </p>
+            <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+              <a href="#produits" class="glow-button">Voir les produits</a>
+              <a href="#services" class="ghost-button">Nos services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="Chiffres clés">
+        <div class="mx-auto grid max-w-7xl gap-4 px-5 py-8 sm:grid-cols-3 lg:px-8">
+          <div><strong>+350</strong><span>configurations livrées</span></div>
+          <div><strong>24h</strong><span>diagnostic rapide</span></div>
+          <div><strong>100%</strong><span>conseil personnalisé</span></div>
+        </div>
+      </section>
+
+      <section id="produits" class="section-shell">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading reveal">
+            <p>Catalogue sélectionné</p>
+            <h2>Produits Gaming disponibles</h2>
+          </div>
+
+          <div class="product-tools reveal">
+            <label class="search-box" aria-label="Rechercher un produit">
+              <i data-lucide="search"></i>
+              <input id="productSearch" type="search" placeholder="Rechercher : RTX, laptop, souris..." />
+            </label>
+            <div class="filter-tabs" aria-label="Filtrer les produits par catégorie">
+              <button class="active" data-filter="all">Tout</button>
+              <button data-filter="pc">PC</button>
+              <button data-filter="laptop">Laptops</button>
+              <button data-filter="accessoire">Accessoires</button>
+              <button data-filter="ecran">Écrans</button>
+            </div>
+          </div>
+
+          <div id="productGrid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="product-card reveal" data-category="pc" data-name="pc gamer rtx 4060">
+              <img loading="eager" src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80" alt="PC Gamer RGB avec carte graphique RTX" />
+              <div class="p-5">
+                <span class="chip">PC Gaming</span>
+                <h3>PC Gamer RTX 4060</h3>
+                <p>Intel Core i5, 16 Go RAM, SSD NVMe 1 To, boîtier RGB airflow.</p>
+                <div class="price-row"><strong>4 500 000 Ar</strong><a href="#contact">Commander</a></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="laptop" data-name="laptop asus rog">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80" alt="Laptop gaming ASUS ROG sur bureau" />
+              <div class="p-5">
+                <span class="chip">Laptop</span>
+                <h3>Laptop ASUS ROG</h3>
+                <p>Écran 144Hz, GPU NVIDIA, clavier RGB et refroidissement avancé.</p>
+                <div class="price-row"><strong>6 200 000 Ar</strong><a href="#contact">Commander</a></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="ecran" data-name="ecran msi 144hz">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80" alt="Écran gaming moderne sur setup PC" />
+              <div class="p-5">
+                <span class="chip">Écran</span>
+                <h3>Écran MSI 144Hz</h3>
+                <p>Dalle rapide, faible latence, couleurs nettes pour FPS et e-sport.</p>
+                <div class="price-row"><strong>1 300 000 Ar</strong><a href="#contact">Commander</a></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="accessoire" data-name="clavier mecanique rgb">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80" alt="Clavier mécanique RGB" />
+              <div class="p-5">
+                <span class="chip">Accessoire</span>
+                <h3>Clavier mécanique RGB</h3>
+                <p>Switchs précis, châssis solide, éclairage personnalisable multizone.</p>
+                <div class="price-row"><strong>250 000 Ar</strong><a href="#contact">Commander</a></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="accessoire" data-name="souris logitech g502">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80" alt="Souris gaming noire avec éclairage" />
+              <div class="p-5">
+                <span class="chip">Accessoire</span>
+                <h3>Souris Logitech G502</h3>
+                <p>Capteur haute précision, boutons programmables, ergonomie gaming.</p>
+                <div class="price-row"><strong>320 000 Ar</strong><a href="#contact">Commander</a></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="pc" data-name="pack upgrade gaming">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Carte graphique et composants PC" />
+              <div class="p-5">
+                <span class="chip">Composants</span>
+                <h3>Pack Upgrade Gaming</h3>
+                <p>Carte graphique, SSD, RAM et alimentation certifiée selon votre budget.</p>
+                <div class="price-row"><strong>Dès 950 000 Ar</strong><a href="#contact">Commander</a></div>
+              </div>
+            </article>
+          </div>
+
+          <p id="emptyState" class="empty-state hidden">Aucun produit ne correspond à votre recherche.</p>
+        </div>
+      </section>
+
+      <section id="services" class="section-shell service-section">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading reveal">
+            <p>Atelier & assistance</p>
+            <h2>Services informatiques</h2>
+          </div>
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div class="service-card reveal"><i data-lucide="cpu"></i><h3>Montage PC</h3><p>Assemblage propre, cable management, tests de stabilité et conseils composants.</p></div>
+            <div class="service-card reveal"><i data-lucide="wrench"></i><h3>Maintenance informatique</h3><p>Diagnostic, nettoyage, remplacement de pièces et optimisation système.</p></div>
+            <div class="service-card reveal"><i data-lucide="hard-drive-download"></i><h3>Installation Windows</h3><p>Windows, pilotes, logiciels essentiels, sécurité et configuration complète.</p></div>
+            <div class="service-card reveal"><i data-lucide="gauge"></i><h3>Optimisation Gaming</h3><p>Réglages FPS, températures, démarrage rapide et performances en jeu.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apropos" class="section-shell">
+        <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+          <div class="reveal">
+            <div class="section-heading left">
+              <p>À propos</p>
+              <h2>Une boutique pensée pour les gamers malgaches</h2>
+            </div>
+            <p class="max-w-2xl text-lg leading-8 text-white/70">
+              TechZone Madagascar accompagne les joueurs, étudiants, créateurs et entreprises avec des machines fiables, des accessoires durables et un service clair. Chaque configuration est proposée selon vos besoins réels : performance, budget, évolutivité et disponibilité locale à Antananarivo.
+            </p>
+            <div class="mt-7 grid gap-4 sm:grid-cols-3">
+              <div class="mini-proof"><strong>Conseil</strong><span>choix adapté</span></div>
+              <div class="mini-proof"><strong>Qualité</strong><span>produits testés</span></div>
+              <div class="mini-proof"><strong>Support</strong><span>après-vente local</span></div>
+            </div>
+          </div>
+          <div class="about-image reveal">
+            <img src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?auto=format&fit=crop&w=1000&q=82" loading="lazy" alt="Setup gaming futuriste avec éclairage RGB" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell contact-section">
+        <div class="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+          <div class="reveal">
+            <div class="section-heading left">
+              <p>Contact</p>
+              <h2>Parlez-nous de votre prochain setup</h2>
+            </div>
+            <div class="contact-list">
+              <a href="tel:+261341234567"><i data-lucide="phone"></i><span>+261 34 12 345 67</span></a>
+              <a href="https://wa.me/261341234567" target="_blank" rel="noopener"><i data-lucide="message-circle"></i><span>WhatsApp TechZone</span></a>
+              <a href="https://facebook.com/" target="_blank" rel="noopener"><i data-lucide="facebook"></i><span>Facebook / TechZone Madagascar</span></a>
+              <p><i data-lucide="map-pin"></i><span>Analakely, Antananarivo 101, Madagascar</span></p>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label>Nom complet<input type="text" name="name" placeholder="Votre nom" required /></label>
+              <label>Téléphone<input type="tel" name="phone" placeholder="+261 ..." required /></label>
+            </div>
+            <label>Email<input type="email" name="email" placeholder="exemple@email.com" /></label>
+            <label>Produit ou service
+              <select name="subject" required>
+                <option value="">Choisir une demande</option>
+                <option>PC Gamer RTX 4060</option>
+                <option>Laptop ASUS ROG</option>
+                <option>Accessoires Gaming</option>
+                <option>Montage ou maintenance PC</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="5" placeholder="Budget, usage, jeux favoris, délai souhaité..." required></textarea></label>
+            <button type="submit" class="glow-button w-full justify-center">Envoyer la demande</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/55">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 py-10 md:grid-cols-[1fr_auto_auto] lg:px-8">
+        <div>
+          <div class="flex items-center gap-3"><span class="logo-mark">TZ</span><strong>TechZone Madagascar</strong></div>
+          <p class="mt-4 max-w-md text-sm leading-6 text-white/58">Votre adresse premium pour PC Gaming, laptops, composants et accessoires à Antananarivo.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#accueil">Accueil</a>
+          <a href="#produits">Produits</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="socials" aria-label="Réseaux sociaux">
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://wa.me/261341234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+          <a href="mailto:contact@techzone.mg" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <p class="border-t border-white/10 px-5 py-5 text-center text-sm text-white/45">© 2026 TechZone Madagascar. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
